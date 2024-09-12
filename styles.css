@@ -14,6 +14,7 @@ html {
   outline: none;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -25,15 +26,15 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
+
 #Myp {
   font-size: 25px;
   color: whitesmoke;
-
   font-style: oblique;
-
   font-weight: 100;
   font-family: "Times New Roman", Times, serif;
 }
+
 .logo {
   font-size: 3rem;
   color: #b74b4b;
@@ -106,6 +107,7 @@ h2::after {
   background: #4b6cb7;
   margin: 0.5rem auto;
 }
+
 .projects {
   margin-top: 500px;
 }
@@ -116,39 +118,9 @@ h2::after {
   gap: 2rem;
 }
 
-.project-card1 {
-  background: #333333;
-  padding: 2rem;
-  height: 300px;
-  border-radius: 8px;
-  color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-image: url(./certificate2.jpg);
-}
-.project-card2 {
-  background: #333333;
-  padding: 2rem;
-  height: 300px;
-  border-radius: 8px;
-  color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-image: url(./certificate2.jpg);
-}
-.project-card3 {
-  background: #333333;
-  padding: 2rem;
-  height: 300px;
-  border-radius: 8px;
-  color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-image: url(./certificate2.jpg);
-}
+.project-card1,
+.project-card2,
+.project-card3,
 .project-card4 {
   background: #333333;
   padding: 2rem;
@@ -178,16 +150,6 @@ h2::after {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-}
-
-.htmlli:hover,
-.jsli:hover,
-.cssli:hover,
-.starp:hover,
-.reactli:hover {
-  background-color: tomato;
-  transform: translateY(-3px);
-  transform: scale(1.1);
 }
 
 .skills-list li {
@@ -229,6 +191,7 @@ h2::after {
 .contact-form button:hover {
   background: #3a5199;
 }
+
 .contact-form button:active {
   background: #000b2b;
 }
@@ -255,20 +218,22 @@ h2::after {
 .divtype {
   display: inline-block;
 }
+
 .certificates {
   margin-top: 20px;
 }
+
 /* Animated Text */
 .animated-text {
   font-size: 35px;
   font-weight: 600;
   min-width: 280px;
-  white-space: nowrap; /* Ensure the text doesn't wrap */
+  white-space: nowrap;
 }
 
 .animated-text span {
   position: relative;
-  display: inline-block; /* Ensure the span size adjusts to content */
+  display: inline-block;
 }
 
 .animated-text span::before {
@@ -307,7 +272,7 @@ h2::after {
   }
   31%,
   71% {
-    content: "Web designer";
+    content: "Web Designer";
   }
   72%,
   100% {
@@ -315,7 +280,7 @@ h2::after {
   }
 }
 
-/* Style for the loading overlay */
+/* Loading Overlay */
 #loading-overlay {
   position: fixed;
   top: 0;
@@ -327,13 +292,11 @@ h2::after {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  /* Hide the overlay initially */
   opacity: 10;
   transition: opacity 30s ease;
   background-color: white;
 }
 
-/* Spinner animation */
 .loading-spinner {
   border: 8px solid rgba(0, 0, 0, 0.1);
   border-left: 8px solid #3498db;
@@ -345,31 +308,27 @@ h2::after {
   animation: spin 4s linear infinite;
 }
 
-/* Spinner rotation */
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   20% {
-    transform: rotate(180dg);
+    transform: rotate(180deg);
   }
   41% {
     transform: rotate(300deg);
   }
-
   61% {
-    transform: rotate(0dg);
+    transform: rotate(0deg);
   }
   81% {
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(180dg);
+    transform: rotate(180deg);
   }
 }
 
-/* Center text */
 #loading-overlay p {
   margin-top: 10px;
   font-size: 18px;
@@ -381,6 +340,7 @@ h2::after {
 #body-plse {
   background-color: black;
 }
+
 .Mypoto {
   background-color: aqua;
   height: 300px;
@@ -389,6 +349,7 @@ h2::after {
   border-radius: 500px;
   margin-left: 900px;
 }
+
 .My-cer-verify {
   height: 300px;
   width: 300px;
@@ -411,6 +372,7 @@ h2::after {
   color: wheat;
   border-radius: 30px;
 }
+
 .download-btn:hover,
 .viewport:hover {
   height: 15px;
@@ -422,24 +384,27 @@ h2::after {
 .socialmedia {
   margin-left: -1100px;
 }
+
 .tgbtn {
   width: 50px;
   height: 50px;
   border-radius: 500px;
 }
+
 .tgbtn1 {
   width: 50px;
   margin-left: 10px;
   height: 50px;
   border-radius: 500px;
 }
+
 .tgbtn2 {
   width: 50px;
   margin-left: 10px;
-
   height: 50px;
   border-radius: 500px;
 }
+
 .tgbtn3 {
   width: 50px;
   height: 50px;
@@ -447,6 +412,7 @@ h2::after {
   margin-top: 13px;
   border-radius: 500px;
 }
+
 .tgbtn:hover,
 .tgbtn1:hover,
 .tgbtn2:hover,
@@ -455,4 +421,100 @@ h2::after {
   transform: scale(1.1);
   text-shadow: #3498db;
   font-size: larger;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+  .logo {
+    margin-right: 0;
+    font-size: 2rem;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+  }
+  
+  .projects {
+    margin-top: 100px;
+  }
+
+  .Mypoto {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .My-cer-verify {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .socialmedia {
+    margin-left: 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .download-btn {
+    margin-left: 0;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo {
+    margin-right: 500px;
+    font-size: 2.5rem;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
+  .projects {
+    margin-top: 200px;
+  }
+
+  .Mypoto {
+    margin-left: 300px;
+  }
+
+  .My-cer-verify {
+    margin-left: 150px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* PCs */
+@media (min-width: 1025px) {
+  .logo {
+    margin-right: 1000px;
+    font-size: 3rem;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
+  .projects {
+    margin-top: 500px;
+  }
+
+  .Mypoto {
+    margin-left: 900px;
+  }
+
+  .My-cer-verify {
+    margin-left: 600px;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
 }
