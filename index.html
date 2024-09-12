@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>  </head>
+  <body>
+    <div id="loading-overlay">
+      <div class="loading-spinner"></div>
+      <p>Please wait...</p>
+    </div>
+    <!-- Your existing content here -->
+      <header class="header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <!-- New Menu Item -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="hero-title">Abomax Portfolio</h1>
+    </header>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+         <div class="animated-text">
+          <h1>Hi, My Name Is <strong style="color: brown;" >Aboma</strong></h1>  
+          <p>I Am <span></span></p> <br/>
+          <p id="Myp">
+            Hello My Name Is Abboma, Mulugeta<br>
+            I Am Full Stack Developer with a passion for coding<br/>
+             and web development.<br>
+            I specialize in building dynamic web applications using<br/>
+            <strong>modern front-end</strong> and <strong>back-end technologies.</strong><br>
+            When I'm not coding,<br>
+            I’m either gaming or exploring new tech trends.
+            </p>
+
+         </div> 
+   </section>
+    <section id="certificates" class="certificates">
+      <h2>Certificates</h2>
+        
+        <div class="certificate-card">
+          <img src="certificate2.jpg" id="my-cer" alt="Certificate 2" />
+        </div>
+        <!-- Add more certificates as needed -->
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul  class="skills-list">
+        <li class="htmlli">HTML</li>
+        <li class="cssli">CSS</li>
+        <li class="jsli">JavaScript</li>
+        <li class="reactli">React</li>
+        <li class="starp">Boatstarp</li>
+
+        <!-- Add more skills -->
+      </ul>
+    </section>
+    <div class="My-cer-verify">  
+      <h3>Certificate</h3>
+ 
+      <p>Issued by UDACITY</p><br/>
+      <a
+        href="cery.pdf"
+        download="Certificate 2"
+        class="download-btn"
+        >Download Certificate</a
+      ><br/>
+      <br/>
+      <a href="https://www.udacity.com/certificate/TPNY32JR" class="viewport" target="_blank">Varify certificate</a>
+    </div>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <a href="./certificate2.jpg">
+          <div class="project-card1">
+              <h3>Project 1</h3>
+              <p>A brief description of your awesome project.</p>
+          </div>
+        </a>
+
+          <div class="project-card2">
+            <h3>Project 1</h3>
+            <p>A brief description of your awesome project.</p>
+        </div>
+        <div class="project-card3">
+          <h3>Project 1</h3>
+          <p>A brief description of your awesome project.</p>
+      </div>
+          <div class="project-card4">
+              <h3>Project 2</h3>
+              <p>A brief description of your awesome project.</p>
+          </div>
+          <!-- Add more projects as needed -->
+      </div>
+  </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button >Send Message</button>
+      </form>
+    </section>
+
+
+    <footer class="footer">
+      <p>&copy; 2024 Max. All rights reserved.</p>
+    </footer>
+   
+        <script src="./script.js"></script>
+  </body>
+</html>

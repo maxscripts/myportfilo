@@ -1,0 +1,458 @@
+/* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+#Myp {
+  font-size: 25px;
+  color: whitesmoke;
+
+  font-style: oblique;
+
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+}
+.logo {
+  font-size: 3rem;
+  color: #b74b4b;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-right: 1000px;
+  border: none;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: aqua;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #4b6cb7;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw + 1rem, 5rem);
+  margin: 2rem 0;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.about,
+.skills {
+  background-color: #282828;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 4px;
+  background: #4b6cb7;
+  margin: 0.5rem auto;
+}
+.projects {
+  margin-top: 500px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card1 {
+  background: #333333;
+  padding: 2rem;
+  height: 300px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-image: url(./certificate2.jpg);
+}
+.project-card2 {
+  background: #333333;
+  padding: 2rem;
+  height: 300px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-image: url(./certificate2.jpg);
+}
+.project-card3 {
+  background: #333333;
+  padding: 2rem;
+  height: 300px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-image: url(./certificate2.jpg);
+}
+.project-card4 {
+  background: #333333;
+  padding: 2rem;
+  height: 300px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-image: url(./certificate2.jpg);
+}
+
+.project-card1:hover,
+.project-card2:hover,
+.project-card3:hover,
+.project-card4:hover {
+  transform: translateY(-20px);
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background: #464545;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.htmlli:hover,
+.jsli:hover,
+.cssli:hover,
+.starp:hover,
+.reactli:hover {
+  background-color: tomato;
+  transform: translateY(-3px);
+  transform: scale(1.1);
+}
+
+.skills-list li {
+  background: #4b6cb7;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #333333;
+  color: #ffffff;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background: #4b6cb7;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #3a5199;
+}
+.contact-form button:active {
+  background: #000b2b;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #111111;
+}
+
+#pname {
+  margin-top: -10px;
+}
+
+.downbtn {
+  margin-left: 500px;
+  text-align: center;
+}
+
+#aboutme {
+  font-size: larger;
+}
+
+.divtype {
+  display: inline-block;
+}
+.certificates {
+  margin-top: 20px;
+}
+/* Animated Text */
+.animated-text {
+  font-size: 35px;
+  font-weight: 600;
+  min-width: 280px;
+  white-space: nowrap; /* Ensure the text doesn't wrap */
+}
+
+.animated-text span {
+  position: relative;
+  display: inline-block; /* Ensure the span size adjusts to content */
+}
+
+.animated-text span::before {
+  content: "Full Stack Developer";
+  color: brown;
+  animation: words 5s linear infinite;
+}
+
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 80%;
+  background: #d2dace;
+  right: 0;
+  top: 0;
+  animation: cursor 0.8s step-start infinite;
+}
+
+@keyframes cursor {
+  0% {
+    background-color: #abb3a6;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccd3c8;
+  }
+}
+
+@keyframes words {
+  0%,
+  30% {
+    content: "Full Stack Developer";
+  }
+  31%,
+  71% {
+    content: "Web designer";
+  }
+  72%,
+  100% {
+    content: "Frontend Developer";
+  }
+}
+
+/* Style for the loading overlay */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Hide the overlay initially */
+  opacity: 10;
+  transition: opacity 30s ease;
+  background-color: white;
+}
+
+/* Spinner animation */
+.loading-spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left: 8px solid #3498db;
+  border-right: 8px solid #3498db;
+  border-bottom: 8px solid #3498db;
+  border-top: 8px solid #3498db;
+  width: 50px;
+  height: 50px;
+  animation: spin 4s linear infinite;
+}
+
+/* Spinner rotation */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(180dg);
+  }
+  41% {
+    transform: rotate(300deg);
+  }
+
+  61% {
+    transform: rotate(0dg);
+  }
+  81% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180dg);
+  }
+}
+
+/* Center text */
+#loading-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  margin-left: 18px;
+  background-color: white;
+}
+
+#body-plse {
+  background-color: black;
+}
+.Mypoto {
+  background-color: aqua;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 500px;
+  margin-left: 900px;
+}
+.My-cer-verify {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 500px;
+  margin-top: -700px;
+  margin-left: 600px;
+  animation-name: scales;
+}
+
+.download-btn,
+.viewport {
+  height: 25px;
+  width: 25px;
+  padding: 2%;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(32, 32, 53);
+  color: wheat;
+  border-radius: 30px;
+}
+.download-btn:hover,
+.viewport:hover {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(77, 77, 241);
+  border-radius: 50px;
+}
+
+.socialmedia {
+  margin-left: -1100px;
+}
+.tgbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 500px;
+}
+.tgbtn1 {
+  width: 50px;
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 500px;
+}
+.tgbtn2 {
+  width: 50px;
+  margin-left: 10px;
+
+  height: 50px;
+  border-radius: 500px;
+}
+.tgbtn3 {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 13px;
+  border-radius: 500px;
+}
+.tgbtn:hover,
+.tgbtn1:hover,
+.tgbtn2:hover,
+.tgbtn3:hover {
+  background-color: tomato;
+  transform: scale(1.1);
+  text-shadow: #3498db;
+  font-size: larger;
+}
