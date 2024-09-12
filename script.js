@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.add("hidden");
       setTimeout(() => {
         overlay.remove();
-      }, 3000); // Matches the CSS transition duration
+      }, 4000); // Matches the CSS transition duration
     }
   });
 
@@ -52,11 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
           "ivaJM-_IgYJOyevvR" // User ID
         )
         .then(function (response) {
-          console.log("SUCCESS!", response.status, response.text);
           alert("Message sent successfully!");
         })
         .catch(function (error) {
-          console.error("FAILED...", error);
           alert("Failed to send the message, please try again.");
         });
 
